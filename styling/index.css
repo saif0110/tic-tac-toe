@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+header{
+    display: flex;
+    justify-content: center;
+    min-height: 50px;
+    background-color: rgb(255, 89, 0);
+    color: white;
+    text-align: center;
+    font-size: 17px;
+}
+header > p{
+    font-size: 13px;
+    padding-top: 29px;
+}
+main{
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 2em;
+}
+.gameSection{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 15vh);
+    grid-template-rows: repeat(3, 15vh);
+    /* background-color: red; */
+}
+.line{
+    position: absolute;
+    /* height: 230px;
+    width: 3px; */
+    background-color: rgb(255, 89, 0);
+    transition:  width 1s, height 2s;
+    /* transform: translate(100px, 60px) rotate(90deg); */
+}
+.box{
+    border: 2px solid rgb(255, 89, 0);
+    font-size: 60px;
+    text-align: center;
+}
+.box:hover{
+    background-color: rgb(250, 181, 144);
+    cursor: pointer;
+}
+#reset{
+    height: 35px;
+    width: 80px;
+    background-color: rgb(255, 89, 0);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+#reset:hover{
+    background-color: rgb(252, 108, 31);
+    cursor: pointer;
+}
+.box-bt{
+    border-top: none;
+}
+.box-bb{
+    border-bottom: none;
+}
+.box-bl{
+    border-left: none;
+}
+.box-br{
+    border-right: none;
+}
+
+#img{
+    background-image: url("../assets/goku-dbz.gif");
+    background-size: cover;
+}
+
+@media screen and (max-width: 540px) {
+    .messageSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2em;
+        padding-left: 10px;
+    }
+  }
